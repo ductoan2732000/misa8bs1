@@ -4,11 +4,9 @@
       <div class="logo-bar-logo"></div>
       <div class="logo-bar-icon"></div>
     </div>
-    <div class="menu-bar">
-      <div v-for="(item, index) in data" :key="index">
-        <div class="menu-icon"></div>
-        <div class="menu-text"></div>
-      </div>
+    <div class="menu-bar" v-for="(item, index) in DataMenu" :key="index">
+      <div class="menu-icon" v-bind:style="item.url"></div>
+      <div class="menu-text">{{ item.text }}</div>
     </div>
   </div>
 </template>
@@ -18,6 +16,11 @@ export default {
   name: "NavSideBar",
   data() {
     return {};
+  },
+  props: {
+    DataMenu: {
+      type: Array,
+    },
   },
 };
 </script>
@@ -53,7 +56,21 @@ export default {
   margin-left: 10px;
   background-image: url("../assets/img/cukcuk-logo.png");
   background-position: 0 center;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+.menu-bar {
+  display: flex;
+  padding-left: 24px;
+  height: 44px;
+  cursor: pointer;
+  line-height: 44px;
+}
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin-right: 10px;
+  background-size: contain;
 }
 </style>

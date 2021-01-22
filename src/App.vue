@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavSideBar />
+    <NavSideBar v-bind:DataMenu="DataMenu"></NavSideBar>
     <Header />
     <Content />
   </div>
@@ -17,6 +17,37 @@ export default {
     NavSideBar,
     Header,
     Content,
+  },
+  data() {
+    return {
+      DataMenu: [
+        {
+          url:
+            "background-image: url('./assets/icon/icons8-alert-50 (1).png');",
+          text: "Tổng quan",
+        },
+        {
+          url: "url('../assets/icon/search.png')",
+          text: "Báo cáo",
+        },
+        {
+          url: "url('../assets/icon/search.png')",
+          text: "Mua hàng",
+        },
+        {
+          url: "url('../assets/icon/search.png')",
+          text: "Danh mục khách hàng",
+        },
+        {
+          url: "url('../assets/icon/search.png')",
+          text: "Danh mục khách hàng",
+        },
+        {
+          url: "url('../assets/icon/search.png')",
+          text: "Thiết lập hệ thống",
+        },
+      ],
+    };
   },
 };
 </script>
