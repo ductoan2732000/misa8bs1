@@ -4,8 +4,13 @@
       <div class="logo-bar-logo"></div>
       <div class="logo-bar-icon"></div>
     </div>
-    <div class="menu-bar" v-for="(item, index) in DataMenu" :key="index">
-      <div class="menu-icon" v-bind:style="item.url"></div>
+    <div 
+    class="menu-bar" v-for="(item, index) in DataMenu" 
+    :key="index" 
+    @click="SwitchPage(index)"
+    >
+      <div class="menu-icon" :style="{ backgroundImage: `url('` + item.url + `');` }"></div>
+      <!-- <div class="menu-icon" :style="{ fontSize: fontSize + 'px;' }"></div> -->
       <div class="menu-text">{{ item.text }}</div>
     </div>
   </div>
@@ -15,7 +20,15 @@
 export default {
   name: "NavSideBar",
   data() {
-    return {};
+    return {
+      aaaa: `url("../assets/img/toggle.png");`,
+      fontSize: 20
+    };
+  },
+  methods: {
+    SwitchPage(index){
+      console.log(index);
+    }
   },
   props: {
     DataMenu: {
@@ -40,6 +53,7 @@ export default {
   align-items: center;
   width: 100%;
   height: 60px;
+  cursor: pointer;
 }
 .logo-bar-logo {
   width: 30px;
@@ -65,6 +79,9 @@ export default {
   height: 44px;
   cursor: pointer;
   line-height: 44px;
+}
+.menu-bar:hover {
+  background-color: #e5e5e5;
 }
 .menu-icon {
   width: 20px;

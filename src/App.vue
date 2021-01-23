@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <NavSideBar v-bind:DataMenu="DataMenu"></NavSideBar>
-    <Header />
-    <Content />
+    <div class="side-right">
+      <Header />
+      <Content />
+    </div>
   </div>
 </template>
 
@@ -22,28 +24,28 @@ export default {
     return {
       DataMenu: [
         {
-          url:
-            "background-image: url('./assets/icon/icons8-alert-50 (1).png');",
+          url: "../assets/icon/icons8-sort-24.png",
+
           text: "Tổng quan",
         },
         {
-          url: "url('../assets/icon/search.png')",
+          url: "background-image: url('../assets/icon/icons8-sort-24.png');",
           text: "Báo cáo",
         },
         {
-          url: "url('../assets/icon/search.png')",
+          url: "background-image: url('../assets/icon/icons8-sort-24.png');",
           text: "Mua hàng",
         },
         {
-          url: "url('../assets/icon/search.png')",
+          url: "background-image: url('../assets/icon/icons8-sort-24.png');",
           text: "Danh mục khách hàng",
         },
         {
-          url: "url('../assets/icon/search.png')",
+          url: "background-image: url('../assets/icon/icons8-sort-24.png');",
           text: "Danh mục khách hàng",
         },
         {
-          url: "url('../assets/icon/search.png')",
+          url: "background-image: url('../assets/icon/icons8-sort-24.png');",
           text: "Thiết lập hệ thống",
         },
       ],
