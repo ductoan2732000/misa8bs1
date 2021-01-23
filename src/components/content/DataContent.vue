@@ -80,7 +80,9 @@ export default {
 
 <style>
 .data-content {
+  width: 100%;
   height: calc(100vh - 246px);
+  overflow: auto;
 }
 #data-table {
   min-width: 100%;

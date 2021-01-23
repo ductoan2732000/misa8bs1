@@ -36,13 +36,14 @@ export default {
   justify-content: center;
   padding: 0 16px;
   width: 100%;
+  box-sizing: border-box;
 }
 .pagging-info {
   position: absolute;
   left: 16px;
 }
 .pagging-option {
-    display: inline-flex;
+  display: inline-flex;
 }
 .pagging-recode {
   position: absolute;
@@ -63,9 +64,9 @@ export default {
   box-sizing: border-box;
 }
 .first-page:hover {
-    opacity: 0.9;
-    background-color: #ffffff;
-    border: 1px solid #ccc;  
+  opacity: 0.9;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
 }
 .pre-page {
   opacity: 0.7;
@@ -81,9 +82,9 @@ export default {
   background-image: url("../../assets/icon/btn-prev-page.svg");
 }
 .pre-page:hover {
-    opacity: 0.9;
-    background-color: #ffffff;
-    border: 1px solid #ccc;  
+  opacity: 0.9;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
 }
 .next-page {
   opacity: 0.7;
@@ -99,9 +100,9 @@ export default {
   background-image: url("../../assets/icon/btn-next-page.svg");
 }
 .next-page:hover {
-    opacity: 0.9;
-    background-color: #ffffff;
-    border: 1px solid #ccc;  
+  opacity: 0.9;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
 }
 .last-page {
   opacity: 0.7;
@@ -117,26 +118,26 @@ export default {
   background-image: url("../../assets/icon/btn-lastpage.svg");
 }
 .last-page:hover {
-    opacity: 0.9;
-    background-color: #ffffff;
-    border: 1px solid #ccc;  
+  opacity: 0.9;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
 }
 .btn-page {
-    width: 30px;
-    height: 30px;
-    margin: 0 4px;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    background-color: #e9ebee;
-    cursor: pointer !important;
-outline: none;
+  width: 30px;
+  height: 30px;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #e9ebee;
+  cursor: pointer !important;
+  outline: none;
 }
 .btn-page:hover {
-    background-color: #ffffff;
-    color: black;
+  background-color: #ffffff;
+  color: black;
 }
-.select-page{
-    background-color: #019160;
-    color: #ffffff;
+.select-page {
+  background-color: #019160;
+  color: #ffffff;
 }
 </style>

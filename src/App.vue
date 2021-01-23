@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <NavSideBar v-bind:DataMenu="DataMenu"></NavSideBar>
-    <div class="side-right">
-      <Header />
-      <Content />
-    </div>
+    <Header />
+    <Content />
   </div>
 </template>
 
